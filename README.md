@@ -1,6 +1,6 @@
 ## Fast script download
 
-Paste this in Your PowerShell to download and run script:
+Run PowerShell as administrator and paste this to download, configure and run script:
 
 ```
 mkdir "$ENV:TEMP\UltraDebloater"
