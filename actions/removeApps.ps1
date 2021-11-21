@@ -27,7 +27,7 @@ if($blockContentDelivery -eq 1)
 	
 	Stop-Process -Name explorer -Force
 	Remove-Item "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore" -Recurse -Force -ErrorAction SilentlyContinue
-	Start-Process Explorer.exe -Wait
+	Start-Process Explorer.exe
 	
 	Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "ContentDeliveryAllowed" -Value 0
 	Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "FeatureManagementEnabled" -Value 0
